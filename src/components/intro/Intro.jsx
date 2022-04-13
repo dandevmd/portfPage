@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 import { helloAnimation, titleAnimation, devAnimation, imageAnimation } from './animation'
 import Toggle from '../toggle/Toggle'
-import Me from '../../img/Me.png'
+import myIntro from '../../img/myIntro1.png'
 import './intro.scss'
 
 
@@ -24,10 +24,7 @@ const Intro = () => {
                         <hr />
                         <motion.h2 variants={devAnimation} className="i-intro i-prof">Self-taught React Developer.</motion.h2>
                     </div>
-                    {/* 
-                    <p className="i-desc">
-                        I design and implement user interface components for yours JavaScript-based web applications using the React open-source library ecosystem.
-                    </p> */}
+                    
                 </div>
             </motion.div>
             <motion.div
@@ -35,9 +32,10 @@ const Intro = () => {
                 whileInView='visible'
                 viewport={{ amount: 0.5 }}
                 className="i-right">
-                <div className="i-bg"></div>
+                    <div className="i-bg">
+                        </div>
                 <motion.img variants={imageAnimation}
-src={Me} alt="My photo" className='i-img' />
+src={myIntro} alt="My photo" className='i-img' />
             </motion.div>
             <Toggle />
         </div>

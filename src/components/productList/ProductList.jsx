@@ -18,7 +18,6 @@ const ProductList = () => {
 
             <div className="pl-texts">
                 <h1  className="pl-title">My <span>W</span>orks</h1>
-                <p  className="pl-desc">Create & Inspire.</p>
             </div>
             <motion.div
                 initial='hidden'

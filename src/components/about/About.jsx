@@ -13,6 +13,7 @@ import ijs from '../../img/js.png'
 import ireact from '../../img/react.png'
 
 
+
 const About = () => {
     const theme = useContext(ThemeContext)
 
