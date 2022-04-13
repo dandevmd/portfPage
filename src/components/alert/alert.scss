@@ -1,0 +1,36 @@
+.myAlert {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+.myAlertContent {
+    padding: 25px;
+    background-color: #59b256;
+    border: none;
+    border-radius: 16px;
+    min-width: 250px;
+}
+
+.myAlert.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 60px;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+}

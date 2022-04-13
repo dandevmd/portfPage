@@ -1,0 +1,100 @@
+.a {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    .a-left {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 100%;
+        .a-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            height: 400px;
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+            img {
+                filter: grayscale(100%);
+            }
+        }
+    }
+    .a-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+        .a-title {
+            font-weight: 600;
+            margin-bottom: 50px;
+            font-size: 5rem;
+            span {
+                color: #59b256;
+            }
+        }
+        .a-images {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            overflow: hidden;
+            height: 100%;
+            object-fit: cover;
+            .a-images-item {
+                width: 100px;
+                height: 100px;
+                border-radius: 20px;
+                margin: 30px
+            }
+        }
+    }
+}
+
+@media(min-width: 640px)and (max-width:900px) {
+    .a .a-right .a-images .a-images-item {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+@media(min-width: 320px)and (max-width:640px) {
+    .a {
+        flex-direction: column;
+        .a-left {
+            height: 40%;
+            .a-card {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                height: 150px;
+                .a-img {
+                    border-radius: none;
+                    width: 250px;
+                    height: 200px;
+                }
+            }
+        }
+        .a-right {
+            height: 60%;
+            width: 100vw;
+            .a-title {
+                font-weight: 600;
+                margin-bottom: 20px;
+                font-size: 3rem;
+            }
+            .a-images {
+                grid-template-columns: repeat(3, 1fr);
+                .a-images-item {
+                    width: 70px;
+                    height: 70px;
+                    margin: 0 20px;
+                }
+            }
+        }
+    }
+}

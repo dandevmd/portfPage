@@ -1,0 +1,108 @@
+.c {
+    height: 100%;
+    padding-top: 50px;
+    position: relative;
+    z-index: 2;
+    .c-bg {
+        width: 10px;
+        height: 92%;
+        background-color: #59b256;
+        position: absolute;
+    }
+    .c-wrapper {
+        padding: 50px;
+        display: flex;
+        .c-left {
+            flex: 1;
+            .c-title {
+                font-size: 60px;
+                width: 80%;
+            }
+            .c-info-item {
+                display: flex;
+                align-items: center;
+                margin: 50px 0px;
+                font-weight: 300;
+                width: 70%;
+                .c-icon {
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 20px;
+                }
+            }
+        }
+        .c-right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .c-desc {
+                font-weight: 200;
+            }
+            form {
+                margin-top: 20px;
+                input {
+                    width: 50%;
+                    height: 50px;
+                    border: none;
+                    border-bottom: 1px solid black;
+                    margin: 10px 5px;
+                    margin-left: 0;
+                    font-size: 14px;
+                    padding-left: 10px;
+                }
+                textarea {
+                    width: 100%;
+                    margin: 15px 0px;
+                    font-size: 14px;
+                    padding-left: 10px;
+                    resize: none;
+                }
+                button {
+                    border: none;
+                    padding: 10px 30px;
+                    background-color: #59b256;
+                    color: white;
+                    font-weight: 500;
+                    font-size: 14px;
+                    cursor: pointer;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 640px)and (max-width:900px) {
+    // .c {
+    //     height: 100vh;
+    // }
+    .c-bg {
+        height: 100vh;
+    }
+}
+
+@media(min-width: 320px)and (max-width:640px) {
+    .c {
+        // height: auto;
+    }
+    .c-bg {
+        display: none;
+    }
+    .c .c-wrapper {
+        padding: 20px;
+        flex-direction: column;
+        .c-left {
+            height: 50%;
+            .c-title {
+                font-size: 3rem;
+                width: 100%;
+                line-height: 3.5rem;
+            }
+        }
+        .c-right {
+            height: 50%;
+        }
+    }
+}
