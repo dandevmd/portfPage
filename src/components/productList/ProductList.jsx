@@ -7,6 +7,7 @@ import image2 from '../../img/cryptoKyrs.png'
 import image3 from '../../img/chat.png'
 import image4 from '../../img/store999.png'
 import image5 from '../../img/cstore.png'
+import image6 from '../../img/image6.png'
 import './productList.scss'
 
 import { cardsAnimation, textAnimation } from './animation'
@@ -51,8 +52,8 @@ const ProductList = () => {
                     </a>
                 </Product>
                 <Product >
-                    <a href="https://github.com/dandevmd/cStore" target='_blank'>
-                        <img src={image5} alt="product" className='p-img' />
+                    <a href="https://github.com/dandevmd/portfPage" target='_blank'>
+                        <img src={image6} alt="product" className='p-img' />
                     </a>
                 </Product>
 

@@ -52,15 +52,21 @@
         right: 0
     }
     .i-img {
-        width: 550px;
-        height: 800px;
+        width: 375px;
+        height: 550px;
         object-fit: cover;
         position: absolute;
         bottom: -10%;
         right: 10%;
         overflow: hidden;
     }
-    @media(min-width: 640px)and (max-width:900px) {
+    @media(min-width: 1250px) {
+        .i-img {
+            height: 95vh;
+            width: 40vw;
+        }
+    }
+    @media(min-width: 641px)and (max-width:900px) {
         .i-img {
             height: 100%;
             width: 100%;
